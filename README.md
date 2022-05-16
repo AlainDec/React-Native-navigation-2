@@ -97,6 +97,7 @@ $ npm install @react-navigation/drawer
 $ expo install react-native-gesture-handler react-native-reanimated
 
 Un plantage babel va arriver, il manque le plugin reanimated, l'ajouter dans babel.config.js
+
     module.exports = function(api) {
     	api.cache(true);
     	return {
@@ -104,8 +105,6 @@ Un plantage babel va arriver, il manque le plugin reanimated, l'ajouter dans bab
 	    	plugins: ['react-native-reanimated/plugin']
     	};
     };
-
-
 
 installer le stack navigator : https://reactnavigation.org/docs/stack-navigator/
 

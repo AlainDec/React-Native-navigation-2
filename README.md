@@ -90,6 +90,10 @@ $ expo install react-native-screens react-native-safe-area-context
 
 $ npm install @react-navigation/bottom-tabs
 
+installer le drawer navigation : 
+
+$ npm install @react-navigation/drawer
+
 les icônes : https://github.com/oblador/react-native-vector-icons
 
 $ npm i react-native-vector-icons

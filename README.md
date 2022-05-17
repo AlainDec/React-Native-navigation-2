@@ -112,7 +112,11 @@ $ expo start -c
 
 installer le stack navigator : https://reactnavigation.org/docs/stack-navigator/
 
-$ npm install react-navigation/stack
+$ npm install @react-navigation/stack
+
+$ expo install react-native-gesture-handler
+
+mettre tout en haut du projet sinon ca crash : import 'react-native-gesture-handler';
 
 les icônes : https://github.com/oblador/react-native-vector-icons
 

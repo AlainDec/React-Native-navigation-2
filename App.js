@@ -9,10 +9,6 @@ import Biography from './components/Biography';
 import Personnage from './components/Personnage';
 import AdaLovelace from './components/AdaLovelace';
 
-const AdaScreen = ()   => <AdaLovelace />
-const PersoScreen = () => <Personnage />
-const BioScreen = ()   => <Biography />
-
 function HomeScreen({ navigation }) {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -31,9 +27,10 @@ function Root() {
   // <Drawer.Navigator useLegacyImplementation>
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Ada LOVELACE" component={AdaScreen} />
-      <Drawer.Screen name="Personnage" component={PersoScreen} />
-      <Drawer.Screen name="Biographie" component={BioScreen} />
+      <Drawer.Screen name="Home" component={HomeScreen} options={{drawerItemStyle: {display: 'none'}}} />
+      <Drawer.Screen name="Ada LOVELACE" component={AdaLovelace} />
+      <Drawer.Screen name="Personnage" component={Personnage} />
+      <Drawer.Screen name="Biographie" component={Biography} />
     </Drawer.Navigator>
   );
 }
@@ -42,11 +39,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator useLegacyImplementation
+        component={Root}
         initialRouteName="Root"
         screenOptions={{ headerShown: false }}
       >
+        <Stack.Screen name="Root" component={Root} options={{headerShown: false}} />
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Root" component={Root} />
       </Stack.Navigator>
     </NavigationContainer>
   );

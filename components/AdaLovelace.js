@@ -1,6 +1,6 @@
-import { Image, View, Text, StyleSheet } from 'react-native';
+import { Image, View, Text, StyleSheet, Button } from 'react-native';
 
-const AdaLovelace = () => {
+const AdaLovelace = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Image 
@@ -9,6 +9,10 @@ const AdaLovelace = () => {
             />
             <View>
                 <Text style={styles.text}>Ada Lovelace</Text>
+                <Button 
+                    onPress={() => navigation.navigate('Home')}
+                    title="retour vers l'accueil"
+                />
             </View>
         </View>
     );

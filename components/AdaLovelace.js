@@ -28,9 +28,13 @@ const styles = StyleSheet.create({
     },
     text: {
         padding: 20,
+        fontWeight: 'bold',
+        fontSize: 20,
+        textAlign: 'center',
     },
     image: {
-        width: '60%',
-        height: 400,
+        width: '100%',
+        height: '50%',
+        resizeMode: 'contain'
     }
 });

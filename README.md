@@ -1,22 +1,17 @@
 # 09-2-navigation
 
-Faire quatre écrans, Les pages doivent toutes se trouver dans un Drawer Navigation :
-- Le premier « Accueil » doit contenir un message de bienvenue (il 
-ne sera pas présent dans le Drawer navigation).
-Il doit contenir un bouton permettant d’aller sur la page Ada 
-Lovelace grâce à la Stack navigation.
-- Le second « Ada LOVELACE » doit contenir cette image :
-
-Et ce texte : Ada LOVELACE
-- Le troisième « Personnage » doit contenir ce texte : 
-
-Ada Lovelace, de son nom complet Augusta Ada King, comtesse de 
+Création de quatre écrans, Les pages se trouvent toutes dans un Drawer Navigation :
+- Le premier « Accueil » contient un message de bienvenue (il ne sera pas présent dans le Drawer navigation).
+Il contient un bouton permettant d’aller sur la page Ada Lovelace grâce à la Stack navigation.  
+- Le second « Ada LOVELACE » doit contenir une image,  
+Et ce texte : Ada LOVELACE  
+- Le troisième « Personnage » contient ce texte : 
+```Ada Lovelace, de son nom complet Augusta Ada King, comtesse de 
 Lovelace, née Ada Byron le 10 décembre 1815 à Londres et morte 
 le 27 novembre 1852 à Marylebone dans la même ville, est une 
-pionnière de la science informatique.
-- Le quatrième « Biographie » doit contenir ce texte : 
-
-Ada était la seule fille légitime du poète George Gordon Byron et de 
+pionnière de la science informatique.```
+- Le quatrième « Biographie » contient ce texte :  
+```Ada était la seule fille légitime du poète George Gordon Byron et de 
 son épouse Annabella Milbanke, une femme intelligente et cultivée, 
 cousine de Caroline Lamb, dont la liaison avec Byron fut à l'origine 
 d'un scandale. Le premier prénom d'Ada, Augusta, aurait été choisi en 
@@ -42,19 +37,15 @@ juin 1833, Mary lui présente Charles Babbage, et Ada — alors âgée de
 deviennent très proches, Ada semblant trouver en Babbage le père 
 qu'elle n'avait jamais euCollier 1. Parmi ses autres connaissances, on 
 compte David Brewster, Charles Wheatstone, Charles Dickens et Michael 
-Faraday.
- Elle se marie en 1835 avec William King, 1er comte de Lovelace. Ils 
-auront trois enfants : Byron, né le 12 mai 1836, Annabella (Anne 
-LA MANU est une marque de NOVEI Formation
-NOVEI Formation – Campus Inovia Bâtiment 12 – 1435 boulevard Cambronne – 60400 Noyon
-SIRET N° 752 434 605 00024 – Code activité : 8559A – Déclaration d’activité N° 32 60 03047 60
-3
-Blunt) née le 22 septembre 1837 et Ralph Gordon né le 2 juillet 1839. 
+Faraday.  
+  Elle se marie en 1835 avec William King, 1er comte de Lovelace. Ils 
+auront trois enfants : Byron, né le 12 mai 1836, Annabella (Anne Blunt) 
+née le 22 septembre 1837 et Ralph Gordon né le 2 juillet 1839. 
 William était dévoué à Ada et encourageait les goûts et les activités 
 d'Ada en mathématiques. La famille vécut à Ockham Park, à Okham (en). 
 Son titre et son nom complet furent pendant la plus grande partie de 
 sa vie La très honorable Augusta Ada, comtesse de Lovelace. Elle est 
-plus connue sous le nom de Ada Lovelace ou Lady Lovelace.*
+plus connue sous le nom de Ada Lovelace ou Lady Lovelace.*  
  Lettre de Lovelace à De Morgan, à propos du calcul différentiel.
  La santé fragile d'Ada, mise à l'épreuve par les grossesses, ainsi 
 que ses responsabilités de mère et de maîtresse de maison, la tiennent 
@@ -75,8 +66,7 @@ En 1841, Ada a de nouveau des problèmes de santé, mais elle
 revient aux mathématiques fin 1842. Elle tourne dès lors entièrement 
 son travail vers la machine analytique de Babbage, et propose à ce 
 dernier ses services pour en poursuivre le développement et la 
-promotion.
-
+promotion.```
 
 --------
 
@@ -84,20 +74,17 @@ Aller sur https://reactnative.dev/docs/navigation#react-navigation et le Tab nav
 
 installation :
 
-$ npm install @react-navigation/native @react-navigation/native-stack
+> $ npm install @react-navigation/native @react-navigation/native-stack  
+> $ expo install react-native-screens react-native-safe-area-context  
+> $ npm install @react-navigation/bottom-tabs  
 
-$ expo install react-native-screens react-native-safe-area-context
+installer le drawer navigation : https://reactnavigation.org/docs/drawer-navigator/#installation  
 
-$ npm install @react-navigation/bottom-tabs
-
-installer le drawer navigation : https://reactnavigation.org/docs/drawer-navigator/#installation
-
-$ npm install @react-navigation/drawer
-
-$ expo install react-native-gesture-handler react-native-reanimated
+> $ npm install @react-navigation/drawer  
+> $ expo install react-native-gesture-handler react-native-reanimated  
 
 Un plantage babel va arriver, il manque le plugin reanimated, l'ajouter dans babel.config.js ( solution ici : https://github.com/software-mansion/react-native-reanimated/issues/1875 )
-
+```
     module.exports = function(api) {
     	api.cache(true);
     	return {
@@ -105,22 +92,21 @@ Un plantage babel va arriver, il manque le plugin reanimated, l'ajouter dans bab
 	    	plugins: ['react-native-reanimated/plugin']
     	};
     };
-
+```
 Puis lancer l'app avec :
 
-$ expo start -c
+> $ expo start -c  
 
 installer le stack navigator : https://reactnavigation.org/docs/stack-navigator/
 
-$ npm install @react-navigation/stack
+> $ npm install @react-navigation/stack  
+> $ expo install react-native-gesture-handler  
 
-$ expo install react-native-gesture-handler
+Mettre tout en haut du projet sinon ca crash : import 'react-native-gesture-handler';  
 
-mettre tout en haut du projet sinon ca crash : import 'react-native-gesture-handler';
+Les icônes : https://github.com/oblador/react-native-vector-icons  
 
-les icônes : https://github.com/oblador/react-native-vector-icons
-
-$ npm i react-native-vector-icons
+> $ npm i react-native-vector-icons  
 
 Choisir une icône : https://ionic.io/ionicons
 

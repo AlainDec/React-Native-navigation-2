@@ -7,14 +7,17 @@ Il contient un bouton permettant d’aller sur la page Ada Lovelace grâce à la
 Et ce texte : Ada LOVELACE  
 - Le troisième « Personnage » contient ce texte : 
  
-```Ada Lovelace, de son nom complet Augusta Ada King, comtesse de 
+```
+Ada Lovelace, de son nom complet Augusta Ada King, comtesse de 
 Lovelace, née Ada Byron le 10 décembre 1815 à Londres et morte 
 le 27 novembre 1852 à Marylebone dans la même ville, est une 
-pionnière de la science informatique.```
+pionnière de la science informatique.
+```
 
 - Le quatrième « Biographie » contient ce texte :  
 
-```Ada était la seule fille légitime du poète George Gordon Byron et de 
+```
+Ada était la seule fille légitime du poète George Gordon Byron et de 
 son épouse Annabella Milbanke, une femme intelligente et cultivée, 
 cousine de Caroline Lamb, dont la liaison avec Byron fut à l'origine 
 d'un scandale. Le premier prénom d'Ada, Augusta, aurait été choisi en 
@@ -69,7 +72,8 @@ En 1841, Ada a de nouveau des problèmes de santé, mais elle
 revient aux mathématiques fin 1842. Elle tourne dès lors entièrement 
 son travail vers la machine analytique de Babbage, et propose à ce 
 dernier ses services pour en poursuivre le développement et la 
-promotion.```
+promotion.
+```
 
 --------
 

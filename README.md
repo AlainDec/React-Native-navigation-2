@@ -1,9 +1,9 @@
-# 09-2-navigation
+# Navigation
 
 Création de quatre écrans, Les pages se trouvent toutes dans un Drawer Navigation :
-- Le premier « Accueil » contient un message de bienvenue (il ne sera pas présent dans le Drawer navigation).
+- Le premier « Accueil » contient un message de bienvenue (non présent dans le Drawer navigation).
 Il contient un bouton permettant d’aller sur la page Ada Lovelace grâce à la Stack navigation.  
-- Le second « Ada LOVELACE » doit contenir une image,  
+- Le second « Ada LOVELACE » contient une image,  
 Et ce texte : Ada LOVELACE  
 - Le troisième « Personnage » contient ce texte : 
  
@@ -81,39 +81,39 @@ Aller sur https://reactnative.dev/docs/navigation#react-navigation et le Tab nav
 
 installation :
 
-> $ npm install @react-navigation/native @react-navigation/native-stack  
-> $ expo install react-native-screens react-native-safe-area-context  
-> $ npm install @react-navigation/bottom-tabs  
+`npm install @react-navigation/native @react-navigation/native-stack`  
+`expo install react-native-screens react-native-safe-area-context`  
+`npm install @react-navigation/bottom-tabs`  
 
 installer le drawer navigation : https://reactnavigation.org/docs/drawer-navigator/#installation  
 
-> $ npm install @react-navigation/drawer  
-> $ expo install react-native-gesture-handler react-native-reanimated  
+`npm install @react-navigation/drawer`  
+`expo install react-native-gesture-handler react-native-reanimated`  
 
-Un plantage babel va arriver, il manque le plugin reanimated, l'ajouter dans babel.config.js ( solution ici : https://github.com/software-mansion/react-native-reanimated/issues/1875 )
+Si un plantage babel arrive, il manque le plugin reanimated, l'ajouter dans babel.config.js ( solution ici : https://github.com/software-mansion/react-native-reanimated/issues/1875 )
 ```
-    module.exports = function(api) {
-    	api.cache(true);
-    	return {
-	    	presets: ['babel-preset-expo'],
-	    	plugins: ['react-native-reanimated/plugin']
-    	};
-    };
+module.exports = function(api) {
+	api.cache(true);
+	return {
+		presets: ['babel-preset-expo'],
+		plugins: ['react-native-reanimated/plugin']
+	};
+};
 ```
 Puis lancer l'app avec :
 
-> $ expo start -c  
+`$ expo start -c`  
 
 installer le stack navigator : https://reactnavigation.org/docs/stack-navigator/
 
-> $ npm install @react-navigation/stack  
-> $ expo install react-native-gesture-handler  
+`npm install @react-navigation/stack`  
+`expo install react-native-gesture-handler`  
 
 Mettre tout en haut du projet sinon ca crash : import 'react-native-gesture-handler';  
 
 Les icônes : https://github.com/oblador/react-native-vector-icons  
 
-> $ npm i react-native-vector-icons  
+`npm i react-native-vector-icons`  
 
 Choisir une icône : https://ionic.io/ionicons
 

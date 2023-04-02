@@ -1,3 +1,5 @@
+![20220518_090402](https://user-images.githubusercontent.com/35977024/168978568-09eb9101-2dff-4115-9d23-ce348d0ceb6b.gif)
+
 # Navigation
 
 Création de quatre écrans, Les pages se trouvent toutes dans un Drawer Navigation :
@@ -116,5 +118,3 @@ Les icônes : https://github.com/oblador/react-native-vector-icons
 `npm i react-native-vector-icons`  
 
 Choisir une icône : https://ionic.io/ionicons
-
-![20220518_090402](https://user-images.githubusercontent.com/35977024/168978568-09eb9101-2dff-4115-9d23-ce348d0ceb6b.gif)
